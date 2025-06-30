@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-portfolio Kinaza ALI2 - Projet Analyse Assurance</title>
+  <link rel="stylesheet" href="style_projet_g.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="image/logo.png" alt="AK Logo">
+      </a>
+    </div>
+  </header>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Parcours de formation</a></li>
+      <li><a href="#" class="active">Projets réalisés</a></li>
+      <li><a href="index.html">Compétences</a></li>
+      <li><a href="index.html">À propos de moi</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="section" id="outil">
+      <h2>Outils utilisés :</h2>
+      <div class="outils">
+        <span class="outil-tag">Classification</span>
+        <span class="outil-tag">ACP</span>
+        <span class="outil-tag">Python</span>
+        <span class="outil-tag">Jupyter Notebook</span>
+      </div>
+    </section>
+
+    <section id="projet1" class="projet">
+      <div class="projet-images">
+        <img class="image-1" src="image/sae4img1.png" alt="Capture écran Jupyter Notebook">
+        <img class="image-2" src="image/sae4img2.png" alt="Graphiques analyse assurance">
+      </div>
+
+      <div class="projet-details">
+        <h2><em>Analyse exploratoire d’un jeu de données de crédits allemands</em></h2>
+        <h4><i>Date : printemps 2025 | Durée : 4 semaines</i></h4>
+
+        <h3>Mise en contexte</h3>
+        <p><i>Projet réalisé individuellement dans le cadre d’un cours d’analyse de données.</i></p>
+        <p>Ce projet porte sur l’analyse d’un jeu de données réelles issues d’un ensemble de crédits allemands. Les données contiennent des informations financières et bancaires de clients d’une banque, avec l’objectif d’identifier les profils clients à risque ou non pour limiter les risques de non-remboursement.</p>
+
+        <h3>Présentation des données</h3>
+        <p>La base de données est accessible via la bibliothèque Python <code>ucimlrepo</code>. Elle contient une variable cible indiquant si le client est considéré comme "bon" (valeur 1) ou "à risque" (valeur 2). De nombreuses variables explicatives décrivent les caractéristiques des clients.</p>
+
+        <h3>Objectifs de l’analyse</h3>
+        <p>L’objectif principal est d’identifier les facteurs qui permettent de prédire le risque client, afin d’aider la banque à mieux évaluer les demandes de crédit et réduire les impayés.</p>
+
+        <h3>Étapes réalisées</h3>
+        <ul>
+          <li><strong>Description des données :</strong> compréhension des variables disponibles et des caractéristiques des individus.</li>
+          <li><strong>Analyse en composantes principales (ACP) :</strong> réduction de la dimensionnalité pour visualiser les données et comprendre leur structure.</li>
+          <li><strong>Techniques de clustering :</strong> application du K-means et de la classification hiérarchique ascendante (CAH) pour regrouper les clients selon leurs similarités.</li>
+        </ul>
+
+        <h3>Conclusion</h3>
+        <p>Ce projet m’a permis de mettre en pratique mes compétences en Python et en analyse exploratoire de données, notamment dans le traitement de données bancaires sensibles. L’approche multi-technique (ACP et clustering) a renforcé la compréhension des profils clients à risque.</p>
+      </div>
+    </section>
+  </main>
+
+  <section id="fin-page">
+    <div class="buttons-container">
+      <a href="page_projet_g.html" class="btn">Voir le projet enquête</a>
+      <a href="index.html" class="btn">Retour à l'accueil</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-section">
+      <h2>Réseaux sociaux</h2>
+      <div class="linkekin">
+        <a href="https://www.linkedin.com/in/kinaza-ali-30a12a284/">
+          <img src="image/linkedin.png" alt="linkedin">
+        </a>
+        <a href="mailto:kinaza.ali@hotmail.com">
+          <img src="image/mail.png" alt="mail">
+        </a>
+      </div>
+      <p>© 2025 Mon Portfolio - Tous droits réservés</p>
+    </div>
+  </footer>
+</body>
+</html>
