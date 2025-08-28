@@ -8,13 +8,13 @@
 
 /* Variables pour les couleurs de chaque page */
 :root {
-    --main-color: #436075;
-    --accent-color: #aac496;
-    --light-color: #f9f9f9;
-    --dark-color: #333;
-    --gradient-start: #ff7c43;
-    --gradient-mid: #c8e15e;
-    --gradient-end: #4cb8c4;
+    --main-color: #436075;           /* Bleu-gris profond */
+    --accent-color: #7FA6B1;         /* Bleu pâle légèrement désaturé */
+    --light-color: #f9fbfd;          /* Gris très clair tirant sur le bleu */
+    --dark-color: #2B3C49;           /* Bleu nuit, plus profond que le main */
+    --gradient-start: #7FA6B1;       /* Doux rappel de l’accent */
+    --gradient-mid: #f9fbfd;         /* Bleu très clair, pastel */
+    --gradient-end: #D6E2EA;         /* Ton très doux pour équilibrer */
 }
 
 body {
@@ -87,7 +87,7 @@ header {
     padding: 40px 20px;
     position: relative;
     overflow: hidden;
-    background-color: #aac496;
+    background-color: #f9fbfd;
 }
 
 .page-1::after {
@@ -206,15 +206,18 @@ h1 {
 
 .title {
     font-size: 2.5rem;
-    color: #437565;
+    color: var(--main-color)
     text-align: center;
     margin-bottom: 50px;
-    font-weight: 800;
+    font-weight: bold;
     position: relative;
     font-family: 'Helvetica Neue';
+    text-align: center;
     font-weight: lighter; /* Choisir un poids fin */
 
 }
+
+
 
 .title::after {
     content: '';
@@ -299,7 +302,7 @@ h1 {
 /* Page pour Compétences et Projets (à ajouter dans votre HTML) */
 .page-3 {
     min-height: 100vh;
-    background-color: #e8efe3;;
+    background-color: var(--light-color);
     padding: 60px 20px;
     position: relative;
 }
@@ -316,7 +319,7 @@ h1 {
 
 .page-4 {
     min-height: 100vh;
-    background-color:  #e8efe3;
+    background-color:  #f5f5f5;
     padding: 60px 20px;
     position: relative;
 }
@@ -328,7 +331,7 @@ h1 {
     left: 0;
     width: 100%;
     height: 1px;
-    background: linear-gradient(90deg, #ff7e5f, #feb47b, #ffcf96);*/
+    /*background: linear-gradient(90deg, #ff7e5f, #feb47b, #ffcf96);*/
 }
 
 /* Footer */
@@ -655,7 +658,7 @@ footer {
 
 .page-5 {
     padding: 40px 20px;
-    background-color: #f7f7f7;
+    background-color: #f9fbfd;
 }
 
 .stage-description {
@@ -706,29 +709,21 @@ footer {
 
 .page-6 {
     min-height: 100vh;
-    background-color: #437565;
+    background-color: #f5f5f5;
     padding: 60px 20px;
     position: relative;
     color: var(--text-light);
     font-family: 'Segoe UI', sans-serif;
 }
 
-.page-6::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 8px;
-    background: linear-gradient(to right, #43c6ac, #6ab7ff, #a18cd1);
-}
+
 
 #mespassions.title {
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
     margin-bottom: 40px;
-    color: #fff;
+    color: var(--main-color);
 }
 
 .carousel-container {
